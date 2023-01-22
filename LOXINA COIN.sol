@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 
 contract LOXINACOIN is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
     constructor() ERC20("LOXINA COIN", "LXN") ERC20Permit("LOXINA COIN") {
-        _mint(msg.sender, 1000000 * 10 ** decimals());
+        _mint(msg.sender, 10000000 * 10 ** decimals());
     }
 
     function pause() public onlyOwner {
